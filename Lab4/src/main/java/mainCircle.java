@@ -5,12 +5,14 @@ import java.util.Scanner;
 public class mainCircle {
     public static void main(String[] args) {
        Scanner keyboard = new Scanner(System.in);
-       double radius=0.0;
+
         System.out.println("Enter a radius for the the circle ");
-        radius = keyboard.nextDouble();
-        Circle circle1=new Circle(radius);
+       
+        Circle circle1=new Circle(keyboard.nextDouble());
             
-        System.out.println("the area is ");
+        System.out.println("the area is "+circle1.getArea());
+        System.out.println("the diamer is "+circle1.getDimeter());
+        System.out.println("the circumference is "+circle1.getCircumference());
             
         
     }
